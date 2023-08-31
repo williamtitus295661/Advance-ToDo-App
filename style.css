@@ -1,0 +1,372 @@
+/* Swiper */
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  .swiper {
+    width: 100%;
+    height: 300px;
+    margin: 20px auto;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .append-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .append-buttons a {
+    display: inline-block;
+    border: 1px solid #007aff;
+    color: #007aff;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 13px;
+  }
+/* Swiper End */
+
+
+/* New CS */
+ 
+.categories-box {
+    overflow: overlay;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+/* Reset CSS Start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: white;
+    list-style: none;
+}
+
+html {
+    transition: 1.5s ease-in-out;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+:root {
+    --darkblue: #0F1E51;
+    --lightblue: #126BF5;
+    --lightestblue: #4F91F2;
+    --pinkcolor: #E92DEE;
+}
+
+/* Reset CSS End */
+
+/* Header and Contianer */
+.contianer {
+    width: 100%;
+    height: 100vh;
+    color: black;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px;
+    padding: 30px 0px 20px;
+    font-size: 18px;
+}
+
+.search-notification {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Search Bar CSS Start */
+.seachBar-form {
+    width: 100%;
+    padding-right: 15px;
+}
+.seachBar-form input[type=text] {
+    width: 150px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('/images/searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+.seachBar-form input[type=text]:focus {
+    width: 100%;
+  }
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+/* Search Bar CSS End */
+
+.greeting {
+    margin: 0px 50px;
+    color: var(--darkblue);
+}
+
+.greeting h1 {
+    font-size: 22px;
+}
+
+/* Header and Container Ends */
+
+.content {
+    margin: 0px 50px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex i {
+    font-size: 28px;
+}
+
+.content .categories {
+    color: lightslategray;
+    margin: 20px 0px;
+}
+
+.addCat {
+    padding: 5px;
+}
+
+.categories-box {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px
+}
+
+.box-cat {
+    padding: 20px 45px;
+    border: 1px solid var(--lightestblue);
+    border-radius: 20px;
+}
+
+.todayTask {
+    margin: 15px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(153, 167, 182);
+}
+
+.task-list {
+    align-items: center;
+    gap: 10px;
+}
+
+.task-list i,
+li {
+    font-size: 18px;
+    margin: 0px 10px;
+    margin: 5px;
+}
+
+.task-items {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+
+.taskTextData {
+    color: gray;
+}
+
+.taskList-linethrough {
+    text-decoration: line-through;
+    color: rgb(196, 194, 194);
+}
+
+.addTaskButton i {
+    font-size: 70px;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    color: var(--lightblue);
+}
+
+.taskCompleted {
+    text-decoration: line-through;
+}
+
+.categoriesOptions {
+    width: 100%;
+}
+
+.categoriesOptions i {
+    position: fixed;
+    top: 18px;
+    right: 15px;
+}
+
+.categoriesOptions input[type=text],
+select {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.addTaskInput {
+    display: flex;
+    align-items: center;
+}
+
+.addTaskInput i {
+    font-size: 25px;
+    margin-left: -40px;
+}
+
+.addTaskInput input {
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 10px;
+    border: 1px solid var(--lightestblue);
+}
+
+.catAddInput {
+    display: flex;
+    align-items: center;
+}
+
+.catAddInput i {
+    font-size: 25px;
+    margin-left: -40px;
+}
+
+.catAddInput input {
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 10px;
+    border: 1px solid var(--lightestblue);
+}
+
+.addcatInputHide {
+    display: none;
+}
+
+
+/* JavaScript Extra Class */
+.addTaskButtonNone {
+    display: none;
+}
+
+.addTaskInputHide {
+    display: none;
+
+}
+
+.update-delete-btn {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: lightgrey;
+}
+
+.update-delete-btn i:hover {
+    color: black;
+}
+
+.update-delete-btn i {
+    font-size: 20px;
+}
+
+.fa-rectangle-xmark {
+    color: red;
+}
+
+.fa-square-check {
+    color: green;
+}
+
+.taskTextData {
+    width: 100%;
+}
+.taskTextData input {
+    width: 100%;
+    padding: 6px;
+}
+
+/* Animations */
+.fadeInLeftBig {
+    -webkit-animation-name: fadeInLeftBig;
+    animation-name: fadeInLeftBig;
+    -webkit-animation-duration: .8s;
+    animation-duration: .8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInLeftBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-2000px, 0, 0);
+        transform: translate3d(-2000px, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInLeftBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-2000px, 0, 0);
+        transform: translate3d(-2000px, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}

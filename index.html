@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> -->
+    <script src="https://kit.fontawesome.com/a9bf99198c.js" crossorigin="anonymous"></script>
+    <title>Best to-do Web-App</title>
+</head>
+
+<body>
+    <div class="contianer">
+        <header>
+            <div class="header-container">
+                <div class="nav-bar">
+                    <i class="fa-solid fa-bars"></i>
+                    <form class="seachBar-form">
+                        <input type="text" name="search" id="searchBox" placeholder="Search..">
+                    </form>
+                </div>
+                <div class="search-notification">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+            </div>
+        </header>
+        <div class="greeting">
+            <h1 class="greeting-user">What's Up, Waseem!</h1>
+        </div>
+        <section class="content">
+
+            <div class="catContianer flex">
+                <h3 class="categories">Add Categories</h3>
+                <i id="showCatBtn" class="fa-solid fa-square-plus"></i>
+            </div>
+
+            <div id="catAddInput" class="catAddInput addcatInputHide">
+                <input type="text" id="addCatinput" class="addCatinput" placeholder="Add Category Name">
+                <i id="addCatBtn" class="fa-solid fa-circle-up"></i>
+            </div>
+            <div id="categories-box" class="categories-box">
+            </div>
+            <div id="task-Container" class="task-Container flex">
+                <p class="todayTask">TODAY's Task</p>
+                <i id="showTaskBtn" class="fa-solid fa-square-plus"></i>
+            </div>
+            <div id="addTaskInput" class="addTaskInput addTaskInputHide fadeInLeftBig">
+                <form id="categoriesOptions" class="categoriesOptions">
+                    <input type="text" class="taskinput" id="taskinput" placeholder="Add Task Today">
+                    <label for="categoriesOptions">Choose a Category:</label>
+                    <select name="selectCat" id="selectCat">
+                    </select>
+                    <i id="addTaskBtn" class="fa-solid fa-circle-up"></i>
+                </form>
+            </div>
+            <div class="task-Data">
+                <ul class="task-list" id="task-list">
+                </ul>
+            </div>
+        </section>
+        <script src="sliderCat.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+        <script src="db.js"></script>
+        <script src="script.js"></script>
+        <script src="animations.js"></script>
+</body>
+
+</html>
