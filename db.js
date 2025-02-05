@@ -10,6 +10,7 @@ function updateTaskDatabase(newValue) {
 function updateCatDatabase(newValue) {
   localStorage.setItem('Categories', JSON.stringify(newValue));
 }
+
 // Tasks
 
 // Add
@@ -62,3 +63,44 @@ function doTaskExist(taskName) {
 function emptyCatedb(checkempty) {
   return catDataBase < 0;
 }
+
+// Remove Category
+function removeCategory(categoryId) {
+  catDataBase = catDataBase.filter((c) => Number(c.id) !== Number(categoryId));
+  updateCatDatabase(catDataBase);
+  return categoryId;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const deleteCategoryBtn = document.getElementById('deleteCategoryBtn');
+    const deleteCatSelect = document.getElementById('deleteCatSelect');
+    const confirmDeleteCatBtn = document.getElementById('confirmDeleteCatBtn');
+    const categoriesBox = document.getElementById('categories-box');
+
+    // Function to populate the delete category dropdown
+    function populateDeleteCatSelect() {
+        deleteCatSelect.innerHTML = ''; // Clear existing options
+        console.log('Populating delete category dropdown...');
+        console.log('Current categories:', catDataBase);
+        catDataBase.forEach(category => {
+            const option = document.createElement('option');
+            option.value = category.id;
+            option.textContent = category.name;
+            deleteCatSelect.appendChild(option);
+        });
+        console.log('Dropdown options:', deleteCatSelect.innerHTML);
+    }
+
+    // Show the delete category dropdown when the delete button is clicked
+    deleteCategoryBtn.addEventListener('click', () => {
+        populateDeleteCatSelect();
+        document.getElementById('deleteCategoryContainer').classList.toggle('show');
+    });
+
+    // Function to delete the selected category
+    confirmDeleteCatBtn.addEventListener('click', () => {
+        const selectedCategoryId = deleteCatSelect.value;
+        removeCategory(selectedCategoryId);
+        populateDeleteCatSelect(); // Update the dropdown after deletion
+    });
+});

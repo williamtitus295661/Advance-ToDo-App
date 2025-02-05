@@ -1,372 +1,132 @@
-/* Swiper */
 body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle, #17f3d9, #0083b0); /* Circular blue-green gradient */
     margin: 0;
-    padding: 0;
-  }
-  .swiper {
-    width: 100%;
-    height: 300px;
-    margin: 20px auto;
-  }
+    padding: 20px;
+}
 
-  .swiper-slide {
+h1 {
     text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .append-buttons {
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  .append-buttons a {
-    display: inline-block;
-    border: 1px solid #007aff;
-    color: #007aff;
-    text-decoration: none;
-    padding: 4px 10px;
-    border-radius: 4px;
-    margin: 0 10px;
-    font-size: 13px;
-  }
-/* Swiper End */
-
-
-/* New CS */
- 
-.categories-box {
-    overflow: overlay;
+    color: darkblue;
+    text-shadow: 
+    -1px -1px 0 white,  
+    1px -1px 0 white,
+    -1px  1px 0 white,
+    1px  1px 0 white; 
 }
 
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
-
-/* Reset CSS Start */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    background-color: white;
-    list-style: none;
-}
-
-html {
-    transition: 1.5s ease-in-out;
-}
-
-ul li {
-    list-style: none;
-}
-
-ul {
-    list-style-type: none;
-}
-
-:root {
-    --darkblue: #0F1E51;
-    --lightblue: #126BF5;
-    --lightestblue: #4F91F2;
-    --pinkcolor: #E92DEE;
-}
-
-/* Reset CSS End */
-
-/* Header and Contianer */
-.contianer {
-    width: 100%;
-    height: 100vh;
-    color: black;
-    position: relative;
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 0px 50px;
-    padding: 30px 0px 20px;
-    font-size: 18px;
-}
-
-.search-notification {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-/* Search Bar CSS Start */
-.seachBar-form {
-    width: 100%;
-    padding-right: 15px;
-}
-.seachBar-form input[type=text] {
-    width: 150px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-image: url('/images/searchicon.png');
-    background-position: 10px 10px; 
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-  }
-  
-.seachBar-form input[type=text]:focus {
-    width: 100%;
-  }
-
-.nav-bar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
-/* Search Bar CSS End */
-
-.greeting {
-    margin: 0px 50px;
-    color: var(--darkblue);
-}
-
-.greeting h1 {
-    font-size: 22px;
-}
-
-/* Header and Container Ends */
-
-.content {
-    margin: 0px 50px;
-}
-
-.flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.flex i {
-    font-size: 28px;
-}
-
-.content .categories {
-    color: lightslategray;
-    margin: 20px 0px;
-}
-
-.addCat {
-    padding: 5px;
-}
-
-.categories-box {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px
-}
-
-.box-cat {
-    padding: 20px 45px;
-    border: 1px solid var(--lightestblue);
-    border-radius: 20px;
-}
-
-.todayTask {
-    margin: 15px 0;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: rgb(153, 167, 182);
-}
-
-.task-list {
-    align-items: center;
-    gap: 10px;
-}
-
-.task-list i,
-li {
-    font-size: 18px;
-    margin: 0px 10px;
+input, select, button {
     margin: 5px;
-}
-
-.task-items {
-    width: 100%;
-    display: flex;
-    gap: 15px;
-}
-
-.taskTextData {
-    color: gray;
-}
-
-.taskList-linethrough {
-    text-decoration: line-through;
-    color: rgb(196, 194, 194);
-}
-
-.addTaskButton i {
-    font-size: 70px;
-    position: absolute;
-    bottom: 25px;
-    right: 25px;
-    color: var(--lightblue);
-}
-
-.taskCompleted {
-    text-decoration: line-through;
-}
-
-.categoriesOptions {
-    width: 100%;
-}
-
-.categoriesOptions i {
-    position: fixed;
-    top: 18px;
-    right: 15px;
-}
-
-.categoriesOptions input[type=text],
-select {
-    width: 100%;
-    margin: 10px 0px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
-
-.addTaskInput {
-    display: flex;
-    align-items: center;
-}
-
-.addTaskInput i {
-    font-size: 25px;
-    margin-left: -40px;
-}
-
-.addTaskInput input {
-    width: 100%;
-    padding: 16px 20px;
+    padding: 10px;
+    font-size: 16px;
     border-radius: 10px;
-    border: 1px solid var(--lightestblue);
 }
 
-.catAddInput {
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task {
     display: flex;
-    align-items: center;
-}
-
-.catAddInput i {
-    font-size: 25px;
-    margin-left: -40px;
-}
-
-.catAddInput input {
-    width: 100%;
-    padding: 16px 20px;
+    justify-content: space-between;
+    background: linear-gradient(to right, yellow,rgb(49, 224, 224)); /* Yellow to light orange gradient */
+    color: darkred; /* Dark red text */
+    text-shadow: 
+    -1px -1px 0 black,  
+    1px -1px 0 white,
+    -1px  1px 0 black,
+    1px  1px 0 white; 
+    margin-bottom: 10px;
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    border: 1px solid var(--lightestblue);
 }
 
-.addcatInputHide {
-    display: none;
+.task span {
+    flex-grow: 1;
 }
 
-
-/* JavaScript Extra Class */
-.addTaskButtonNone {
-    display: none;
+.task button {
+    margin-left: 5px;
+    background: linear-gradient(to right, orange, pink); /* Orange to pink gradient */
+    border: none;
+    color: darkred; /* Dark red text */
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
-.addTaskInputHide {
-    display: none;
-
+.task button:hover {
+    background: linear-gradient(to right, orange, pink); /* Orange to pink gradient */
 }
 
-.update-delete-btn {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: lightgrey;
-}
-
-.update-delete-btn i:hover {
-    color: black;
-}
-
-.update-delete-btn i {
+ul, li {
+    text-align: left;
+    color: blue;
     font-size: 20px;
+    text-shadow: 
+    -1px -1px 0 rgb(178, 168, 237),  
+    1px -1px 0 rgb(180, 215, 238),
+    -1px  1px 0 rgb(186, 150, 236),
+    1px  1px 0 rgb(203, 193, 227); 
+    border-radius: 10px;
 }
 
-.fa-rectangle-xmark {
-    color: red;
+button {
+    background: linear-gradient(to right, orange, pink); /* Orange to pink gradient */
+    color: darkred; /* Dark red text */
+    font-size: 20px;
+    text-shadow: 
+    -1px -1px 0 rgb(178, 168, 237),  
+    1px -1px 0 rgb(180, 215, 238),
+    -1px  1px 0 rgb(186, 150, 236),
+    1px  1px 0 rgb(203, 193, 227); 
+    border-radius: 10px;
 }
 
-.fa-square-check {
-    color: green;
+option {
+    background: linear-gradient(to right, burlywood, burlywood); /* Burlywood gradient */
+    color: teal;
+    font-size: 20px;
+    text-shadow: 
+    -1px -1px 0 white,  
+    1px -1px 0 white,
+    -1px  1px 0 white,
+    1px  1px 0 white; 
+    border-radius: 10px;
 }
 
-.taskTextData {
-    width: 100%;
-}
-.taskTextData input {
-    width: 100%;
-    padding: 6px;
-}
-
-/* Animations */
-.fadeInLeftBig {
-    -webkit-animation-name: fadeInLeftBig;
-    animation-name: fadeInLeftBig;
-    -webkit-animation-duration: .8s;
-    animation-duration: .8s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+select {
+    background: linear-gradient(to right, burlywood, burlywood); /* Burlywood gradient */
+    color: teal;
+    font-size: 20px;
+    text-shadow: 
+    -1px -1px 0 white,  
+    1px -1px 0 white,
+    -1px  1px 0 white,
+    1px  1px 0 white; 
+    border-radius: 10px;
 }
 
-@-webkit-keyframes fadeInLeftBig {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(-2000px, 0, 0);
-        transform: translate3d(-2000px, 0, 0);
-    }
-
-    100% {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-    }
+input {
+    background: linear-gradient(to right, rgb(231, 136, 12), burlywood);
+    color: rgb(2, 2, 13);
+    font-size: 20px;
+    text-shadow: 
+    -1px -1px 0 rgb(178, 168, 237),  
+    1px -1px 0 rgb(180, 215, 238),
+    -1px  1px 0 rgb(186, 150, 236),
+    1px  1px 0 rgb(203, 193, 227); 
+    border-radius: 10px;
 }
 
-@keyframes fadeInLeftBig {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(-2000px, 0, 0);
-        transform: translate3d(-2000px, 0, 0);
-    }
-
-    100% {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-    }
+p {
+    color: lightblue;
+    text-shadow: 
+    -1px -1px 0 rgb(15, 0, 0),  
+    1px -1px 0 rgb(13, 13, 12),
+    -1px  1px 0 rgb(20, 1, 1),
+    1px  1px 0 rgb(10, 4, 0);
 }
